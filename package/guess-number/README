@@ -1,0 +1,32 @@
+# Guess Number Game
+
+## Description
+
+The "Guess Number Game" is a simple command-line game where the player has to guess a randomly generated number between 1 and 20. The game provides feedback on whether the guess is too low or too high until the correct number is guessed.
+
+## How to Play
+
+1. The game will randomly select a number between 1 and 20.
+2. You need to enter your guess.
+3. After each guess, the game will tell you whether your guess is too high or too low.
+4. Keep guessing until you find the correct number!
+
+## Building the Game
+
+To build the "Guess Number Game", you can integrate it into your **Buildroot** environment.
+
+1. Clone or copy the `guess_number` package folder into the `package/` directory of your Buildroot project.
+2. Run `make menuconfig` to configure Buildroot and enable the **Guess Number Game** package:
+   - Navigate to **Package Selection for the target**.
+   - Locate **"Guess Number Game"** and enable it.
+3. Build the project with `make`.
+4. Once the build completes, the executable `guess_number` will be available in the final root filesystem.
+
+
+## License
+
+This project is licensed under the **GPL-2.0** License. See the [LICENSE](./LICENSE) file for more details.
+
+## Author
+
+This game was created by Arthur ABELKALON.

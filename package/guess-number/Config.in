@@ -1,0 +1,4 @@
+config BR2_PACKAGE_GUESS_NUMBER
+    bool "guess-number"
+    help
+      A simple game where you have to guess a number between 1 and 20.
