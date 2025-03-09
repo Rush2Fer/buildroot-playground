@@ -24,3 +24,37 @@ You can also find us on #buildroot on OFTC IRC.
 
 If you would like to contribute patches, please read
 https://buildroot.org/manual.html#submitting-patches
+
+
+-----------------------
+
+# Buildroot Packages - Playground
+## Description
+
+This repository contains multiple applications integrated into **Buildroot**:  
+1. **Hello World**: A basic hello world application.
+2. **Guess Number Game**: A game where the player needs to guess a randomly generated number between 1 and 20. The game provides feedback on whether the guess is too high or too low until the correct number is guessed.
+
+
+## Building the Applications
+
+To build the **Hello World** and **Guess Number Game** applications, you can integrate them into your **Buildroot** environment.
+
+### 1. Clone or Copy the `hello` and `guess_number` packages into your Buildroot `package/` directory.
+
+### 2. Run `make menuconfig` to configure Buildroot and enable the packages:
+
+- Navigate to **Package Selection for the target**.
+- Locate **"Hello World"** and **"Guess Number Game"** and enable them.
+
+### 3. Build the project with `make`.
+
+### 4. Once the build completes, the executables `hello` and `guess_number` will be available in the final root filesystem.
+
+## License
+
+This project is licensed under the **GPL-2.0** License. See the [LICENSE](./LICENSE) file for more details.
+
+## Author
+
+These applications were created by Arthur ABELKALON.
